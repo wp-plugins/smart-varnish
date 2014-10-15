@@ -8,13 +8,16 @@ Stable tag: 1.0.0
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
-Smart varnish cache bypass plugin.
+Varnish cache bypass plugin.
 
 == Description ==
 [Smart Varnish](http://www.smartpixels.net/?post_type=products&p=628) A simple plugin to bypass varnish caching for logged in users and serve uncached content.
   
 Useful for websites that don't want to serve cached content for logged in users and at the same time want to serve cached content to guests.
 
+ **NOTE:** This plugin requires knowledge of varnish caching and server administration, it will not work out of the box. We cannot guarantee it will work in every scenario and recommend usage with discretion.
+
+Please follow the **[tutorial here](http://www.smartpixels.net/?p=650)**.
 
 == Installation ==
 1. Install Smart Varnish either via the WordPress.org plugin directory, or by uploading the files to your server.
@@ -28,7 +31,7 @@ if( req.request == "POST" || req.http.cookie ~ "smart_varnish_bypass" )
     return( pass );
   }
 `
-**Warning:** If you don't have the expertise to edit the varnish configurations its better to hire some help.
+**Warning:** If you don't have the expertise to edit the varnish configurations its better to hire some help as you could damage your server irreparably.
  
 == Frequently Asked Questions ==
 
