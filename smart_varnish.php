@@ -3,7 +3,7 @@
  * Plugin Name: Smart Varnish
  * Plugin URI:  http://www.smartpixels.net/products/
  * Description: Bypass varnish caching using cookies
- * Version:     1.0.0
+ * Version:     1.0.2
  * Author:      Smartpixels
  * Author URI:  http://www.smartpixels.net
  * License:     GPLv2+
@@ -30,7 +30,7 @@
  */
 
 // Useful global constants
-define( 'SMART_VARNISH_VERSION', '1.0.0' );
+define( 'SMART_VARNISH_VERSION', '1.0.2' );
 define( 'SMART_VARNISH_URL',     plugin_dir_url( __FILE__ ) );
 define( 'SMART_VARNISH_PATH',    dirname( __FILE__ ) . '/' );
 
